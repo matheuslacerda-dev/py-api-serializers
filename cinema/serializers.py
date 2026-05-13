@@ -12,13 +12,13 @@ class CinemaHallSerializer(serializers.ModelSerializer):
 class ActorSerializer(serializers.ModelSerializer):
     class Meta:
         model = Actor
-        fields = ["first_name", "last_name", "full_name"]
+        fields = ["id", "first_name", "last_name", "full_name"]
 
 
 class GenreSerializer(serializers.ModelSerializer):
     class Meta:
         model = Genre
-        fields = ["name"]
+        fields = ["id", "name"]
 
 
 class MovieSerializer(serializers.ModelSerializer):
